@@ -13,5 +13,7 @@ test('run', () => {
 test('number of grids', () => {
     render(<App/>);
     const titles = screen.getAllByTestId('title');
-    expect(titles.length).toBe(3);
+    expect(titles.length).toBe(4);
 })
+
+

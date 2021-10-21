@@ -279,6 +279,21 @@ export default class App extends Component<any, {}> {
             "name": "Christa Long"
         }
     ]
+    backend4: Array<any> = [
+        {
+            "age": 37,
+            "name": "Tami Allen"
+        },
+        {
+            "age": 37,
+            "name": "Martina Warner"
+        },
+        {
+            "age": 23,
+            "name": "Matilda Gross"
+        },
+
+    ]
 
     columns1 = [
         {
@@ -344,6 +359,16 @@ export default class App extends Component<any, {}> {
             filterable: false,
         }
     ]
+    columns4 = [
+        {
+            title: 'Name',
+            id: 'name',
+            dataPath: '',
+            width: 90,
+            sortable: false,
+            filterable: false,
+        }
+    ]
 
     render() {
 
@@ -363,19 +388,20 @@ export default class App extends Component<any, {}> {
                 <div data-testid="app" style={{height: '90vh'}}>
                     <div className='h-100 w-100 rowFlex'>
                         <div style={{flex: 2, minWidth: 0}} className='h-100 w-100 columnFlex'>
-                            <div className='flex1'>
+                            <div className='flex1' data-testid='human-resource'>
                                 <Table
-                                    backend={this.backend3}
-                                    columns={this.columns3}
-                                    title='Customers'
-                                    apiUrl='Customers'
+                                    backend={this.backend4}
+                                    columns={this.columns4}
+                                    title='Human Resource'
+                                    apiUrl='HR'
                                     paginatable={false}
                                     searchable={false}
                                 />
                             </div>
                         </div>
                         <div style={{flex: 5, minWidth: 0}} className='h-100 w-100 columnFlex'>
-                            <div className='flex1'>
+                            <div className='flex1'
+                                 data-testid='sales-team'>
                                 <Table
                                     backend={this.backend2}
                                     columns={this.columns2}
@@ -385,7 +411,9 @@ export default class App extends Component<any, {}> {
                                     searchable={false}
                                 />
                             </div>
-                            <div className='flex1'>
+                            <div className='flex1'
+                                 data-testid='users'
+                            >
                                 <Table
                                     backend={this.backend1}
                                     columns={this.columns1}
@@ -396,7 +424,9 @@ export default class App extends Component<any, {}> {
                                 /></div>
                         </div>
                         <div style={{flex: 1, minWidth: 0}} className='h-100 w-100 columnFlex'>
-                            <div className='flex1'>
+                            <div className='flex1'
+                                 data-testid='customers'
+                            >
                                 <Table
                                     backend={this.backend3}
                                     columns={this.columns3}

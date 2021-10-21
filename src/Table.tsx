@@ -278,7 +278,7 @@ export default class Table extends Component<any, {}> {
                                         </th>)
                                     }
                                 </tr>
-                                {
+                                <tr>{
                                     this.setting.columns.map(col => <td className='column cell filter'
                                                                         style={{width: col.width + '%'}}>
                                         <div style={{minHeight: '20px'}}>
@@ -295,12 +295,9 @@ export default class Table extends Component<any, {}> {
                                             </div>
                                         </div>
                                     </td>)
-                                }
+                                }</tr>
                                 {
-
-                                    this.setting.data.map((row, ri) =>
-                                        <tr
-                                            className="row">
+                                    this.setting.data.map((row, ri) => <tr className="row">
                                             {
                                                 this.setting.columns.map((col, ci) =>
                                                     <td className='column cell'>
