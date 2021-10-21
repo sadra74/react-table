@@ -252,11 +252,12 @@ export default class Table extends Component<any, {}> {
             <div data-testid="table" className='w-100 h-100 grid columnFlex makeChildCenter'>
                 {
                     <div className='w-100 h-100 columnFlex'>
-                        <span data-testid="title" className="title">{this.setting.title}</span>
-                        {this.setting.searchable && <input placeholder="SEARCH HERE" onChange={(e) => {
-                            this.search(e)
-                        }} className="textBox search"/>}
-                        <div className="h-100 w-100 overFlowAuto flex1">
+                        <div className='columnFlex cover'>
+                            <span data-testid="title" className="title">{this.setting.title}</span>
+                            {this.setting.searchable && <input placeholder="SEARCH HERE" onChange={(e) => {
+                                this.search(e)
+                            }} className="textBox search"/>}</div>
+                        <div className="h-100 w-100 overFlowAuto flex1 cover">
                             <table className="w-100">
                                 <tbody>
                                 <tr className="table header">
@@ -309,7 +310,7 @@ export default class Table extends Component<any, {}> {
                                 </tbody>
                             </table>
                         </div>
-                        {this.setting.paginatable && <div className='rowFlex overFlowAuto w-100'>
+                        {this.setting.paginatable && <div className='rowFlex overFlowAuto cover w-100'>
                             {
                                 Array.from({length: (this.setting.data.length / this.setting.loadOptions.take) + 1}, (_, i) => i + 1).map(p => {
                                     return <div onClick={() => {

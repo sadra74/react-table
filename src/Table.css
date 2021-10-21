@@ -199,3 +199,10 @@ body{
 .overFlowAuto::-webkit-scrollbar-thumb {
     background-color: darkgreen;
 }
+
+.cover{
+    border: 2px dashed darkgreen;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
