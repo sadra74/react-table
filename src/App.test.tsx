@@ -1,9 +1,17 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import * as React from "react";
+import {render, screen, cleanup} from "@testing-library/react"
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+
+test('run', () => {
+    render(<App/>);
+    const app = screen.getByTestId('app');
+    expect(app).toBeInTheDocument()
+
+})
+test('number of grids', () => {
+    render(<App/>);
+    const titles = screen.getAllByTestId('title');
+    expect(titles.length).toBe(3);
+})

@@ -1,0 +1,198 @@
+
+div {
+    box-sizing: border-box;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.header {
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    padding: 10px !important;
+    background-color: black !important;
+    border-bottom: 3px solid darkgreen;
+    opacity: 0.9;
+    z-index: 1000;
+
+
+}
+
+.filter {
+    border: 3px solid darkgreen;
+}
+
+.table {
+    transition: 0.5s;
+}
+
+
+.column {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    resize: both;
+
+}
+
+.grid {
+    border: 1px solid darkgreen;
+    padding: 10px;
+}
+
+.row {
+    text-align: center;
+    width: 100%;
+}
+
+.columnTitle {
+    text-align: center;
+    flex: 1;
+}
+
+.cell {
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.search {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.cell:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+    color: white;
+}
+
+
+.textBox {
+    width: 100%;
+    background-color: #003200;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.textBox::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.textBox:focus-visible {
+    outline: none
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex1 {
+    flex: 1;
+    min-height: 0;
+}
+
+.overFlowAuto {
+    overflow: auto;
+}
+
+.paginateButton {
+    border: 3px solid darkgreen;
+    margin: 1px;
+    min-width: 50px;
+    padding: 10px;
+    color: darkgreen;
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #003400;
+    margin-bottom: 10px;
+}
+
+input {
+    box-sizing: border-box
+}
+
+.makeChildCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 16px solid lightgray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    border-top: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+body{
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    animation: animatedBackground 50s linear infinite alternate;
+    background-color: #166e008a;
+}
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.overFlowAuto::-webkit-scrollbar {
+    width: 1em;
+}
+
+.overFlowAuto::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px darkgreen;
+}
+
+.overFlowAuto::-webkit-scrollbar-thumb {
+    background-color: darkgreen;
+}
