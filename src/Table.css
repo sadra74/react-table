@@ -44,6 +44,7 @@ div {
 .grid {
     border: 3px solid darkgreen;
     padding: 10px;
+    background-color: #dfdfdf;
 }
 
 .row {
@@ -176,7 +177,7 @@ input {
 
 
 body{
-    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");*/
     animation: animatedBackground 200s linear infinite alternate;
     background-color: #97979703;
 }
@@ -206,5 +207,5 @@ body{
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
-    background-color: #ffffff5c;
+    background-color: #f1f1f1;
 }

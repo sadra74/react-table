@@ -252,7 +252,7 @@ export default class Table extends Component<any, {}> {
             <div data-testid="table" className='w-100 h-100 grid columnFlex makeChildCenter'>
                 {
                     <div className='w-100 h-100 columnFlex'>
-                        <div className='columnFlex cover'>
+                        <div className='columnFlex'>
                             <span data-testid="title" className="title">{this.setting.title}</span>
                             {this.setting.searchable && <input placeholder="SEARCH HERE" onChange={(e) => {
                                 this.search(e)
