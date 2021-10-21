@@ -178,7 +178,7 @@ input {
 body{
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
     animation: animatedBackground 50s linear infinite alternate;
-    background-color: #166e008a;
+    background-color: #0000008a;
 }
 @keyframes animatedBackground {
     from {
