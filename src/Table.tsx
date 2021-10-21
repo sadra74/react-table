@@ -298,13 +298,13 @@ export default class Table extends Component<any, {}> {
                                 }</tr>
                                 {
                                     this.setting.data.map((row, ri) => <tr className="row">
-                                            {
-                                                this.setting.columns.map((col, ci) =>
-                                                    <td className='column cell'>
-                                                        {row[col.id]}
-                                                    </td>)
-                                            }
-                                        </tr>)
+                                        {
+                                            this.setting.columns.map((col, ci) =>
+                                                <td className='column cell'>
+                                                    {row[col.id]}
+                                                </td>)
+                                        }
+                                    </tr>)
                                 }
                                 </tbody>
                             </table>
@@ -327,6 +327,4 @@ export default class Table extends Component<any, {}> {
             </div>
         )
     }
-
-
 }
