@@ -13,7 +13,6 @@ div {
     top: 0;
     padding: 10px !important;
     background-color: black !important;
-    border-bottom: 3px solid darkgreen;
     opacity: 0.9;
     z-index: 1000;
 
