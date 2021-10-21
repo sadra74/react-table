@@ -201,7 +201,7 @@ body{
 }
 
 .cover{
-    border: 2px dashed darkgreen;
+    border: 1px dashed darkgreen;
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
