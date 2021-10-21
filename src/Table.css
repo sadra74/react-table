@@ -20,11 +20,7 @@ div {
 }
 
 .filter {
-    border: 3px solid darkgreen;
-    background-color: #003400 !important;
-
-
-
+    background-color: #003200 !important;
 }
 
 .table {
@@ -34,7 +30,7 @@ div {
 
 .column {
     padding: 5px;
-    background-color: #285028;
+    background-color: #006e00;
     color: white;
     resize: both;
 
