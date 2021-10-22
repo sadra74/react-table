@@ -40,6 +40,7 @@ div {
     border: 3px solid darkgreen;
     padding: 10px;
     background-color: #dfdfdf;
+    opacity: 0.8;
 }
 
 .row {
@@ -172,9 +173,9 @@ input {
 
 
 body{
-    /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");*/
-    animation: animatedBackground 200s linear infinite alternate;
-    background-color: #97979703;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    /*animation: animatedBackground 200s linear infinite alternate;*/
+    background-color: #000000;
 }
 @keyframes animatedBackground {
     from {
